@@ -25,3 +25,8 @@
 #### TRELLO BOARD :
 
 https://trello.com/b/1ina1rpk/bank-tech-test
+
+#### Use Case Diagram :
+
+![Alt text](./Bank-tech-test.svg)
+<img src="./Bank-tech-test.svg">
