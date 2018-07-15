@@ -22,10 +22,25 @@
 | 13/01/2012 | 2000.00 |        | 3000.00 |
 | 10/01/2012 | 1000.00 |        | 1000.00 |
 
-#### TRELLO BOARD :
+#### Trello Board :
 
 https://trello.com/b/1ina1rpk/bank-tech-test
 
 #### Use Case Diagram :
 
 <img src="./Bank-tech-test.svg">
+
+| Use Case Name  | Banking tech test |
+| --- | --- |
+| Summary Description | Allows a bank client to withdraw and deposit money from their bank account |
+| Preconditions | The user must have a bank account |
+| Post conditions | On success, the account holder should be able to see a copy of their current bank statement | 
+|                 | The items on the bank statement should be in reverse chronological order |
+|                 | The statement should include the account balance |
+| Actors          | Bank Client / Account Holder |
+|                 | Banking System |
+| Triggers        | User opens an account |
+|                 | User deposits money into their account |
+|                 | User withdraws money from their account |
+|                 | User prints bank statement |
+| Main flow       |  |
