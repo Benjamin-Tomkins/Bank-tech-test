@@ -34,13 +34,7 @@ https://trello.com/b/1ina1rpk/bank-tech-test
 | --- | --- |
 | Summary Description | Allows a bank client to withdraw and deposit money from their bank account |
 | Preconditions | The user must have a bank account |
-| Post conditions | On success, the account holder should be able to see a copy of their current bank statement | 
-|                 | The items on the bank statement should be in reverse chronological order |
-|                 | The statement should include the account balance |
-| Actors          | Bank Client / Account Holder |
-|                 | Banking System |
-| Triggers        | User opens an account |
-|                 | User deposits money into their account |
-|                 | User withdraws money from their account |
-|                 | User prints bank statement |
+| Post conditions | • On success, the account holder should be able to see a copy of their current bank statement<br>• The items on the bank statement should be in reverse chronological order<br>• The statement should include the account balance |
+| Actors          | • Bank Client / Account Holder<br>• Banking System |
+| Triggers        | • User opens an account<br>• User deposits money into their account<br>• User withdraws money from their account<br>• User prints bank statement |
 | Main flow       |  |
