@@ -1,11 +1,11 @@
 # <a name="top"></a>Bank Tech Test
 
-Test case scenario [test](#test)
-Trello Board [trello](#trello)
-Use Case Diagram [diag](#diag)
-Use Case Specification [spec](#spec)
-User Stories [stories](#stories)
-Code Requirements [reqs](#reqs)
+[Test case scenario](#test) <br>
+[Trello Board](#trello) <br>
+[Use Case Diagram](#diag) <br>
+[Use Case Specification](#spec) <br>
+[User Stories](#stories) <br>
+[Code Requirements](#reqs) <br>
 
 ### <a name="test"></a>Test Case Scenario :
 
@@ -21,20 +21,16 @@ Code Requirements [reqs](#reqs)
 | 13/01/2012 | 2000.00 |        | 3000.00 |
 | 10/01/2012 | 1000.00 |        | 1000.00 |
 
-<div style="text-align: right"> top [top](#top) </div>
 
 #### <a name="trello"></a>Trello Board :
 
 https://trello.com/b/1ina1rpk/bank-tech-test
-
-<div style="text-align: right"> top [top](#top) </div>
 
 
 #### <a name="diag"></a>Use Case Diagram :
 
 <img src="./Bank-tech-test.svg">
 
-<div style="text-align: right"> top [top](#top) </div>
 
 
 #### <a name="spec"/></a>Use Case Specification :
@@ -49,7 +45,6 @@ https://trello.com/b/1ina1rpk/bank-tech-test
 | Main flow       |  |
 | Extensions      |  |
 
-<div style="text-align: right"> top [top](#top) </div>
 
 
 #### <a name="stories"></a>User Stories :
@@ -95,7 +90,6 @@ As a bank
 If an account holder tries to withdraw more than their balance
 The bank will decline the transaction
 ```
-<div style="text-align: right"> top [top](#top) </div>
 
 ### <a name="reqs"></a>Code Requirements :
 
@@ -104,6 +98,5 @@ The bank will decline the transaction
 * Account statement (date, amount, balance) printing.
 * Data can be kept in memory (it doesn't need to be stored to a database or anything).
 
-<div style="text-align: right"> top [top](#top) </div>
 
 
