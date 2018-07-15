@@ -38,3 +38,48 @@ https://trello.com/b/1ina1rpk/bank-tech-test
 | Actors          | • Bank Client / Account Holder<br>• Banking System |
 | Triggers        | • User opens an account<br>• User deposits money into their account<br>• User withdraws money from their account<br>• User prints bank statement |
 | Main flow       |  |
+| Extensions      |  |
+
+#### User Stories
+
+```
+As a user
+So I can manage my personal finances
+I'd like to open a current account
+```
+
+```
+As an account holder
+So I can add money to my account
+I want to be able to make deposits
+```
+
+```
+As an account holder
+So I can buy things I like
+I want to be able to withdraw money from my account
+```
+
+```
+As an account holder
+So I can see a record of my transactions
+I want to print my bank statement
+```
+
+```
+As an account holder
+So I can see my most recent transactions first
+I want to see my itemised statement in reverse chronological order
+```
+
+```
+As an account holder
+So I can see how much money is in my account
+I want my statement to include the current balance after every transaction
+```
+
+```
+As a bank
+If an account holder tries to withdraw more than their balance
+The bank will decline the transaction
+```
