@@ -1,10 +1,10 @@
-# <a name="top"></a>Bank Tech Test
+# </a>Bank Tech Test
 
-[Test case scenario](#test) <br>
-[Trello Board](#trello) <br>
-[Use Case Diagram](#diag) <br>
-[Use Case Specification](#spec) <br>
-[User Stories](#stories) <br>
+[Test case scenario](#test) | 
+[Trello Board](#trello) | 
+[Use Case Diagram](#diag) | 
+[Use Case Specification](#spec) | 
+[User Stories](#stories) | 
 [Code Requirements](#reqs) <br>
 
 ### <a name="test"></a>Test Case Scenario :
@@ -16,24 +16,24 @@
 **Then** she would see
 
 | date       | credit  | debit  | balance |
-| ---        | ---     | ---    | ---     |
+| :---        | ---     | ---    | ---     |
 | 14/01/2012 |         | 500.00 | 2500.00 |
 | 13/01/2012 | 2000.00 |        | 3000.00 |
 | 10/01/2012 | 1000.00 |        | 1000.00 |
 
 
-#### <a name="trello"></a>Trello Board :
+### <a name="trello"></a>Trello Board :
 
 https://trello.com/b/1ina1rpk/bank-tech-test
 
 
-#### <a name="diag"></a>Use Case Diagram :
+### <a name="diag"></a>Use Case Diagram :
 
 <img src="./Bank-tech-test.svg">
 
 
 
-#### <a name="spec"/></a>Use Case Specification :
+### <a name="spec"/></a>Use Case Specification :
 
 | Use Case Name  | Banking tech test |
 | --- | --- |
@@ -47,7 +47,7 @@ https://trello.com/b/1ina1rpk/bank-tech-test
 
 
 
-#### <a name="stories"></a>User Stories :
+### <a name="stories"></a>User Stories :
 
 ```
 As a user
