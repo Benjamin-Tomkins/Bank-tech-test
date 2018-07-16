@@ -42,7 +42,27 @@ https://trello.com/b/1ina1rpk/bank-tech-test
 | Post conditions | • On success, the account holder should be able to see a copy of their current bank statement<br>• The items on the bank statement should be in reverse chronological order<br>• The statement should include the account balance |
 | Actors          | • Bank Client / Account Holder<br>• Banking System |
 | Triggers        | • User opens an account<br>• User deposits money into their account<br>• User withdraws money from their account<br>• User prints bank statement |
-| Main flow       |  |
+| Main flow       | **Opening an account :**
+                    1. User creates an account in their name.
+                    2. The bank creates an account with a zero balance.
+
+                    **Depositing into an account :**
+                    3. Account holder specifies the “Deposit” option.
+                    4. Account holder specifies the amount to be deposited.
+                    5. Bank includes the transaction in the user’s account history.
+                    6. Bank updates the account’s balance.
+
+                    **Withdrawing from an account :**
+                    7. Account holder specifies the “Withdraw” option.
+                    8. Account holder specifies the amount to withdraw.
+                    9. Bank includes the transaction in the user’s account history.
+                    10. Bank updates the account’s balance.
+
+                    **Printing a statement :**
+                    11. Account holder specifies the “Print Statement” option.
+                    12. Bank gets a copy of the account holder’s transaction history up to the time of the request.
+                    13. Bank sorts the copy into reverse chronological order.
+                    14. Bank prints a statement to match the format of the test case sample. |
 | Extensions      |  |
 
 
