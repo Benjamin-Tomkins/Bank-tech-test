@@ -47,7 +47,7 @@ https://trello.com/b/1ina1rpk/bank-tech-test
 | *Depositing into an account*      | 3. Account holder specifies the “Deposit” option.<br>4. Account holder specifies the amount to be deposited.<br>5. Bank includes the transaction in the user’s account history.<br>6. Bank updates the account’s balance. |
 | *Withdrawing from an account*      | 7. Account holder specifies the “Withdraw” option.<br>8. Account holder specifies the amount to withdraw.<br>9. Bank includes the transaction in the user’s account history.<br>10. Bank updates the account’s balance. |
 | *Printing a statement*      | 11. Account holder specifies the “Print Statement” option.<br>12. Bank gets a copy of the account holder’s transaction history up to the time of the request.<br>13. Bank sorts the copy into reverse chronological order.<br>14. Bank prints a statement to match the format of the test case sample. |
-| Extensions      | 1aUser must have a bank account.<br>4a The account holder can only deposit a positive value.<br>8a The account holder cannot withdraw a number greater than the current balance. |
+| Extensions      | 1a User must have a bank account.<br>4a The account holder can only deposit a positive value.<br>8a The account holder cannot withdraw a number greater than the current balance. |
 
 
 ### <a name="stories"></a>User Stories :
