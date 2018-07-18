@@ -6,6 +6,7 @@
 [Use Case Specification](#spec) | 
 [User Stories](#stories) | 
 [Transaction Flow Diagram](#flow) | 
+[Class Diagram](#class) | 
 [Code Requirements](#reqs) <br>
 
 ### <a name="test"></a>Test Case Scenario :
@@ -97,6 +98,12 @@ The bank will decline the transaction
 ### <a name="flow"></a>Transaction Flow Diagram :
 
 <img src="./Transaction-flow.svg">
+
+
+### <a name="class"></a>Class Diagram :
+
+<img src="./Class-diagram.svg">
+
 
 
 ### <a name="reqs"></a>Code Requirements :
