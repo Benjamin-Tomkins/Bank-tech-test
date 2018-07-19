@@ -7,4 +7,10 @@ class Transaction
         amount.positive?? @credit=(amount) : @debit=(amount.abs)
         return itself
     end
+
+
+    def value
+        !!@credit ? @credit : -@debit
+    end
+    
 end

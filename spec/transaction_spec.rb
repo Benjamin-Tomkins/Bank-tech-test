@@ -56,6 +56,8 @@ describe Transaction do
             end
 
             it '.value' do
+                expect(@credit_test.value).to eq(1000)
+                expect(@debit_test.value).to eq(-500)
             end
 
             it '.to_hash' do
