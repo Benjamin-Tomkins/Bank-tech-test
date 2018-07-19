@@ -2,6 +2,9 @@ require 'simplecov'
 require 'simplecov-console'
 
 
+ENV['ENVIROMENT'] = 'test'
+
+
 SimpleCov.formatter = SimpleCov.formatter = SimpleCov::Formatter::Console
 SimpleCov.start
 
