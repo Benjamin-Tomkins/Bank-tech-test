@@ -1,5 +1,4 @@
 require 'date'
-# require 'account'
 require 'statement'
 
 describe Statement do

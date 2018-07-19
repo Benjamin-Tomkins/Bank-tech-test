@@ -5,7 +5,6 @@ class Statement
 
 
     def initialize (account)
-        # fail 'There are no transactions to print' if account.empty?
         @transactions = account.to_hash
         @statement = []
     end
