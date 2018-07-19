@@ -154,6 +154,11 @@
         1,
         null,
         1,
+        1,
+        1,
+        1,
+        null,
+        1,
         null,
         1,
         null,
@@ -170,6 +175,8 @@
         null
       ],
       "/Users/bmt/Makers/week10/Bank-tech-test/lib/statement.rb": [
+        1,
+        null,
         1,
         null,
         null,
@@ -302,6 +309,8 @@
       ],
       "/Users/bmt/Makers/week10/Bank-tech-test/lib/transaction.rb": [
         1,
+        null,
+        1,
         1,
         null,
         1,
@@ -334,6 +343,6 @@
         null
       ]
     },
-    "timestamp": 1532005618
+    "timestamp": 1532014110
   }
 }
