@@ -18,6 +18,10 @@ describe Account do
             expect {Account.new(@debit_test)}.to raise_error(RuntimeError, "Cannot go into debt")
         end
 
+        it 'can only add valid transavtions' do
+            expect {Account.new(5)}.to raise_error(RuntimeError, "Not a transaction")
+        end
+
         it 'stores all transactions by reverse date' do
         end
 
