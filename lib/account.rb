@@ -12,6 +12,15 @@ class Account < Array
     end
 
 
+    def to_hash
+        arr = []
+        for i in 0..last_transaction
+            arr << self[i]
+        end
+        arr
+    end
+    
+
 
     # PRIVATE METHODS  
     def [] (index)

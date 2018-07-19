@@ -26,6 +26,10 @@ describe Account do
         end
 
         it 'records current balance history' do
+            account = Account.new(@credit_test)
+            account << @debit_test
+            expect(account.to_hash.first[:balance]).to eq(1000)
+            expect(account.to_hash.last[:balance]).to eq(500)
         end
 
     end
@@ -42,6 +46,11 @@ describe Account do
             end
 
             it '.to_hash' do
+                account = Account.new(@credit_test)
+                account << @debit_test
+                hash =  [ {:date=> DateTime.parse("10/01/2012"), :credit=>1000, :debit=>nil, :balance=>1000},
+                          {:date=> DateTime.parse("14/01/2012"), :credit=>nil,  :debit=>500, :balance=>500} ]
+                expect(account.to_hash).to eq(hash)
             end
 
         end
