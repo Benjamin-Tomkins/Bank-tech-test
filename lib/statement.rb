@@ -1,11 +1,13 @@
 class Statement
 
     # PUBLIC METHODS
-    attr_accessor :transactions
+    attr_accessor :statement, :transactions
 
 
     def initialize (account)
-        @transactions = account
+        fail 'There are no transactions to print' if account.empty?
+        @transactions = account.to_hash
+        @statement = []
     end
 
 end

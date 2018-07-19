@@ -4,22 +4,22 @@ describe Account do
 
     describe 'use case scenarios' do
 
-        xit 'created with first transaction' do
+        it 'created with first transaction' do
         end
 
-        xit 'cannot go into debt' do
+        it 'cannot go into debt' do
         end
 
-        xit 'accepts deposits' do
+        it 'accepts deposits' do
         end
 
-        xit 'accepts withdrawls' do
+        it 'accepts withdrawls' do
         end
 
-        xit 'stores all transactions by reverse date' do
+        it 'stores all transactions by reverse date' do
         end
 
-        xit 'records current balance history' do
+        it 'records current balance history' do
         end
 
     end
@@ -29,13 +29,10 @@ describe Account do
 
         describe 'methods' do
 
-            xit '.new' do
+            it '#<<' do
             end
 
-            xit '#<<' do
-            end
-
-            xit '.to_hash' do
+            it '.to_hash' do
             end
 
         end

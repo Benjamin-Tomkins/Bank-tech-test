@@ -3,9 +3,6 @@ require 'statement'
 
 describe Statement do
 
-    subject(:statement) { described_class.new }
-
-
     # date       || credit  ||  debit  || balance
     # 14/01/2012 ||         ||  500.00 || 2500.00
     # 13/01/2012 || 2000.00 ||         || 3000.00
@@ -18,9 +15,9 @@ describe Statement do
     @account_hash = [ @transaction_01,
                       @transaction_02,
                       @transaction_03 ]
-    
 
-    context 'use case scenarios' do
+
+    describe 'use case scenarios' do
 
         it 'prints a bank statement' do
 
@@ -29,9 +26,7 @@ describe Statement do
             account = double('account')
             allow(account).to receive(:to_hash).and_return(@account_hash)
 
-            statement = Statement.new(account)
-
-            expect { statement.printStatement }.to output(%Q(expected_statement)).to_stdout
+            expect { Statement.printStatement }.to output(%Q(expected_statement)).to_stdout
         end
 
     end
@@ -39,13 +34,8 @@ describe Statement do
 
     context 'unit tests' do
 
-        it '.new' do
-            account = double('account')
-            new_statement = Statement.new(account)
-            expect(new_statement.transactions).to eq(account)
-        end
+        it '.printStatement' do
 
-        xit '.printStatement' do
         end
 
     end

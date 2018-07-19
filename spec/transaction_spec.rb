@@ -6,16 +6,16 @@ describe Transaction do
 
     describe 'use case scenarios' do
         
-        xit 'no zero transactions' do
+        it 'no zero transactions' do
         end
 
-        xit 'can be credit transaction' do
+        it 'can be credit transaction' do
         end
 
-        xit 'can be debit transaction' do
+        it 'can be debit transaction' do
         end
 
-        xit 'represents a value' do
+        it 'represents a value' do
         end
 
     end
@@ -25,26 +25,26 @@ describe Transaction do
 
         describe 'attributes' do
 
-            xit '.date' do
+            it '.date' do
             end   
 
-            xit '.credit' do
+            it '.credit' do
             end
 
-            xit '.debit' do
+            it '.debit' do
             end
 
         end
 
         describe 'methods' do
 
-            xit '.entry' do
+            it '.entry' do
             end
 
-            xit '.value' do
+            it '.value' do
             end
 
-            xit '.to_hash' do
+            it '.to_hash' do
             end
 
         end
