@@ -20,7 +20,7 @@ class Statement
     def runStatementBuilder
         @statement << headingToString
         @transactions.reverse.each {|item| @statement << itemHashToString(item)}
-        @statement.join("\n")
+        @statement.join('\n')
     end
 
 

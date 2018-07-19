@@ -8,6 +8,14 @@ describe Statement do
     # 13/01/2012 || 2000.00 ||         || 3000.00
     # 10/01/2012 || 1000.00 ||         || 1000.00
 
+    # a1 = Transaction.new.entry(amount:1000, date: "10-01-2012")
+    # a2 = Transaction.new.entry(amount:2000, date: "13-01-2012")
+    # a3 = Transaction.new.entry(amount:-500, date: "14-01-2012")
+    # client = Account.new(a1)
+    # client << a2
+    # client << a3
+    # puts Statement.new(client).printStatement
+
     describe 'use case scenarios' do
 
         it 'prints a bank statement' do
