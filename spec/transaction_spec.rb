@@ -4,7 +4,7 @@ require 'transaction'
 
 describe Transaction do
 
-    before do
+    before(:all) do
         @credit_test = Transaction.new.entry(amount: 1000, date: "10-01-2012")
         @debit_test  = Transaction.new.entry(amount: -500, date: "14/01/2012")
     end
