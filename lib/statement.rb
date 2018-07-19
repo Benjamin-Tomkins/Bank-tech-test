@@ -14,7 +14,7 @@ class Statement
 
     def printStatement
         runStatementBuilder
-        @statement
+        return @statement
     end
 
 
