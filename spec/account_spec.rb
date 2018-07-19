@@ -11,16 +11,11 @@ describe Account do
     describe 'use case scenarios' do
 
         it 'created with first transaction' do
-            account = Account.new(@credit_test)
+            Account.new(@credit_test)
         end
 
         it 'cannot go into debt' do
-        end
-
-        it 'accepts deposits' do
-        end
-
-        it 'accepts withdrawls' do
+            expect {Account.new(@debit_test)}.to raise_error(RuntimeError, "Cannot go into debt")
         end
 
         it 'stores all transactions by reverse date' do
@@ -48,7 +43,5 @@ describe Account do
         end
 
     end
-
-
 
 end
