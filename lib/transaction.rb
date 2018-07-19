@@ -12,5 +12,20 @@ class Transaction
     def value
         !!@credit ? @credit : -@debit
     end
-    
+
+
+    def to_hash
+        { date: @date, credit: @credit, debit: @debit }
+    end
+
+
+    def credit?
+      !!@credit
+    end
+
+
+    def debit?
+        !!@debit
+    end
+
 end

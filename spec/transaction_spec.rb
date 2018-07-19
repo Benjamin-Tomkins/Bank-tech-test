@@ -52,15 +52,18 @@ describe Transaction do
 
         describe 'methods' do
 
-            it '.entry' do
-            end
-
             it '.value' do
                 expect(@credit_test.value).to eq(1000)
                 expect(@debit_test.value).to eq(-500)
             end
 
             it '.to_hash' do
+
+                credit_hash = {:date=>DateTime.parse("10/01/2012"), :credit=>1000, :debit=>nil}
+                debit_hash  = {:date=>DateTime.parse("14/01/2012"), :credit=>nil, :debit=>500}
+
+                expect(@credit_test.to_hash).to eq(credit_hash)
+                expect(@debit_test.to_hash).to eq(debit_hash)
             end
 
         end
