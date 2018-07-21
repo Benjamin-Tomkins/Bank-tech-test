@@ -1,6 +1,6 @@
-require './lib/transaction.rb'
-require './lib/account.rb'
-require './lib/statement.rb'
+require_relative 'transaction.rb'
+require_relative 'account.rb'
+require_relative 'statement.rb'
 
 a1 = Transaction.new.entry(amount:1000, date: "10-01-2012")
 a2 = Transaction.new.entry(amount:2000, date: "13-01-2012")
