@@ -2,9 +2,9 @@ require_relative 'transaction.rb'
 require_relative 'account.rb'
 require_relative 'statement.rb'
 
-a1 = Transaction.new.entry(amount:1000, date: "10-01-2012")
-a2 = Transaction.new.entry(amount:2000, date: "13-01-2012")
-a3 = Transaction.new.entry(amount:-500, date: "14-01-2012")
+a1 = Transaction.new.entry(amount: 1000, date: '10-01-2012')
+a2 = Transaction.new.entry(amount: 2000, date: '13-01-2012')
+a3 = Transaction.new.entry(amount: -500, date: '14-01-2012')
 client = Account.new(a1)
 client << a2
 client << a3

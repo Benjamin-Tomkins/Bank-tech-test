@@ -3,8 +3,8 @@ require 'account'
 describe Account do
 
     before(:all) do
-        @credit_test = Transaction.new.entry(amount: 1000, date: "10-01-2012")
-        @debit_test  = Transaction.new.entry(amount: -500, date: "14/01/2012")
+        @credit_test = Transaction.new.entry(amount: 1000, date: '10-01-2012')
+        @debit_test  = Transaction.new.entry(amount: -500, date: '14/01/2012')
     end
 
 
@@ -15,14 +15,16 @@ describe Account do
         end
 
         it 'cannot go into debt' do
-            expect {Account.new(@debit_test)}.to raise_error(RuntimeError, "Cannot go into debt")
+            expect { Account.new(@debit_test) }
+                .to raise_error(RuntimeError, 'Cannot go into debt')
         end
 
-        it 'can only add valid transavtions' do
-            expect {Account.new(5)}.to raise_error(RuntimeError, "Not a transaction")
+        it 'can only add valid transactions' do
+            expect { Account.new(5) }
+                .to raise_error(RuntimeError, 'Not a transaction')
         end
 
-        it 'stores all transactions by reverse date' do
+        xit 'stores all transactions by reverse date' do
         end
 
         it 'records current balance history' do
@@ -48,8 +50,14 @@ describe Account do
             it '.to_hash' do
                 account = Account.new(@credit_test)
                 account << @debit_test
-                hash =  [ {:date=> DateTime.parse("10/01/2012"), :credit=>1000, :debit=>nil, :balance=>1000},
-                          {:date=> DateTime.parse("14/01/2012"), :credit=>nil,  :debit=>500, :balance=>500} ]
+                hash =  [{ date: Date.parse('10/01/2012'),
+                           credit: 1000,
+                           debit: nil,
+                           balance: 1000 },
+                         { date: Date.parse('14/01/2012'),
+                           credit: nil,
+                           debit: 500,
+                           balance: 500 }]
                 expect(account.to_hash).to eq(hash)
             end
 

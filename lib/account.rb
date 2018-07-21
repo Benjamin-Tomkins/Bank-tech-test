@@ -22,7 +22,7 @@ class Account < Array
     
 
 
-    # PRIVATE METHODS  
+    # PRIVATE METHODS
     def [] (index)
         fail 'No transaction exists' if index.abs > last_transaction
         self.at(index).to_hash.merge!(balance: balance_at(index))
@@ -43,12 +43,12 @@ class Account < Array
 
     def if_valid(transaction)
         fail 'Not a transaction' unless Transaction === transaction
-        fail 'Cannot go into debt' if overdraft transaction 
+        fail 'Cannot go into debt' if overdraft transaction
     end
 
 
     def overdraft(transaction)
-        if self.empty? 
+        if self.empty?
             transaction.value.negative?
         else
             (balance_at(last_transaction) + transaction.value).negative?

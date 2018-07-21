@@ -21,13 +21,13 @@ class Statement
     # PRIVATE METHODS
     def runStatementBuilder
         @statement << headingToString
-        @transactions.reverse.each {|item| @statement << itemHashToString(item)}
+        @transactions.reverse.each { |item| @statement << itemHashToString(item) }
         @statement.join('\n')
     end
 
 
     def headingToString
-        heading = @transactions.last.keys.map {|key| key.to_s}
+        heading = @transactions.last.keys.map(&:to_s.to_proc)
         heading.join(' || ')
     end
 
@@ -41,7 +41,7 @@ class Statement
 
 
     def dateParser(date)
-        date.strftime("%d/%m/%Y ")
+        date.strftime('%d/%m/%Y ')
     end
 
 
