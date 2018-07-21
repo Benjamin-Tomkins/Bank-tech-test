@@ -46,7 +46,7 @@ class Statement
 
 
     def numberParser(number)
-        !!number ? sprintf('%.2f ', number) : ''
+        !!number ? format('%.2f ', number) : ''
     end
 
 

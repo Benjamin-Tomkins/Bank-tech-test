@@ -8,7 +8,7 @@ class Account < Array
 
     def << (transaction)
         if_valid transaction
-        self.push transaction
+        push transaction
     end
 
 
@@ -19,25 +19,25 @@ class Account < Array
         end
         arr
     end
-    
+
 
 
     # PRIVATE METHODS
     def [] (index)
         fail 'No transaction exists' if index.abs > last_transaction
-        self.at(index).to_hash.merge!(balance: balance_at(index))
+        at(index).to_hash.merge!(balance: balance_at(index))
     end
 
 
     def balance_at (index)
         arr = []
-        self.slice(0..index).each {|i| arr << i.value}
+        slice(0..index).each { |i| arr << i.value }
         arr.inject(0, :+)
     end
 
 
     def last_transaction
-        self.length.pred
+        length.pred
     end
 
 
@@ -48,11 +48,8 @@ class Account < Array
 
 
     def overdraft(transaction)
-        if self.empty?
-            transaction.value.negative?
-        else
-            (balance_at(last_transaction) + transaction.value).negative?
-        end
+        return transaction.value.negative? if empty?
+        (balance_at(last_transaction) + transaction.value).negative?
     end
 
 
