@@ -31,7 +31,7 @@ https://trello.com/b/1ina1rpk/bank-tech-test
 
 ### <a name="diag"></a>Use Case Diagram :
 
-<img src="./Bank-tech-test.svg">
+<img src="./img/Bank-tech-test.svg">
 
 
 
@@ -97,12 +97,12 @@ The bank will decline the transaction
 
 ### <a name="flow"></a>Transaction Flow Diagram :
 
-<img src="./Transaction-flow.svg">
+<img src="./img/Transaction-flow.svg">
 
 
 ### <a name="class"></a>Class Diagram :
 
-<img src="./Class-diagram.svg">
+<img src="./img/Class-diagram.svg">
 
 
 
